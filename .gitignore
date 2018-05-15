@@ -105,3 +105,4 @@ ENV/
 
 # others
 conn_settings.txt
+testlog.txt

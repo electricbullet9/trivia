@@ -130,16 +130,15 @@ def contains_whitespace(s):
 
 def matches_term(answer, word_list, index):
     if not contains_whitespace(answer):
-        if word_list[index] in answer:
+        if answer in word_list[index]:
             return True
     else:
         term_list = re.split(r"\s", answer)
         count = 0
         for term in term_list:
-            if word_list[index+count] in term:
+            if word_list[index+count] == term:
                 count += 1
             else:
                 return False
         return True
-
 

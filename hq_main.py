@@ -38,9 +38,9 @@ while True:
     if test:
         # q = input("enter question: ")
         input("done. press enter to restart lol")
-        q = "Which of these physics terms gets its name from an Indian scientist?"
+        q = "Which of these shows typically features voiceover narration instead of an on-screen host?"
         print(q)
-        answers = ["Boson", "Ferrimagnetism", "Lepton"]
+        answers = ["Flip or Flop", "Fixer Upper", "House Hunters"]
         # for x in range(3):
         #     answers.append(input(f"enter answer {x}: "))
         asyncio.get_event_loop().run_until_complete(testing.test_question(q, answers))

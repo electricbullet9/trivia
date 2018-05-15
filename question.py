@@ -218,7 +218,6 @@ def get_proximity_scores(texts, answers, question_keywords):
                         current_min = temp_total
 
             total += current_min
-
             length += 1
         if length != 0:
             proximity_scores[i] = total/length
