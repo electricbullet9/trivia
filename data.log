@@ -1,0 +1,17 @@
+ERROR:root:Server timeout/error to http://www.tifr.res.in/~outreach/outreach/scientists.pdf
+Traceback (most recent call last):
+  File "C:\Users\Jack\HackQ-Trivia\networking.py", line 17, in fetch
+    return await response.text()
+  File "D:\Udemy\PythonBootcamp\Anaconda3\lib\site-packages\aiohttp\client_reqrep.py", line 848, in text
+    await self.read()
+  File "D:\Udemy\PythonBootcamp\Anaconda3\lib\site-packages\aiohttp\client_reqrep.py", line 815, in read
+    self._body = await self.content.read()
+  File "D:\Udemy\PythonBootcamp\Anaconda3\lib\site-packages\aiohttp\streams.py", line 312, in read
+    block = await self.readany()
+  File "D:\Udemy\PythonBootcamp\Anaconda3\lib\site-packages\aiohttp\streams.py", line 328, in readany
+    await self._wait('readany')
+  File "D:\Udemy\PythonBootcamp\Anaconda3\lib\site-packages\aiohttp\streams.py", line 250, in _wait
+    await waiter
+  File "D:\Udemy\PythonBootcamp\Anaconda3\lib\site-packages\aiohttp\helpers.py", line 670, in __exit__
+    raise asyncio.TimeoutError from None
+concurrent.futures._base.TimeoutError
