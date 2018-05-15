@@ -1,2 +1,0 @@
-BEARER_TOKEN=enter user token
-USER_ID=enter user id
